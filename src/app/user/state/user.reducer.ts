@@ -24,7 +24,7 @@ export const getCurrentUser = createSelector(
 );
 
 export const userReducer = createReducer(
-    { maskUserName: true},
+    initialState,
     on(createAction('[User] Toggle User Name'), state => {
         console.log('original state: ' + JSON.stringify(state));
         return {
